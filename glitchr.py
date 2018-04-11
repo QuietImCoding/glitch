@@ -101,7 +101,7 @@ def overwrite(ns):
 parser = argparse.ArgumentParser(description='Glitchr. Used to mess with data of files')
 parser.add_argument("--silent", action="store_true")
 
-subparsers = parser.add_subparsers(help="Commands available: corrupt replace selective")
+subparsers = parser.add_subparsers(help="Commands available: corrupt overwrite selective")
 
 corrupt_parser = subparsers.add_parser('corrupt', help='Randomly corrupts image')
 overwrite_parser = subparsers.add_parser('overwrite', help='Overwrites one section of a file with another')
